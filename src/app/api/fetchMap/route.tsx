@@ -16,6 +16,9 @@ export async function POST(request: Request) {
   }
 
   const { data } = result;
-  const map = await fs.readFile(`public/maps/${data.name}/map.bytes`, "binary");
+  const map = await fs.readFile(
+    `public/maps/${data.name}/main/map.bytes`,
+    "binary"
+  );
   return new NextResponse(map);
 }

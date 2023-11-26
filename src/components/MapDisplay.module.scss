@@ -1,0 +1,31 @@
+.canvas {
+  zoom: 2;
+}
+
+.overlayCanvas {
+  position: absolute;
+  zoom: 2;
+}
+
+.selector {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.default {
+  color: blue;
+}
+
+.impassable {
+  color: red;
+}
+
+.topLayer {
+  color: green;
+}
+
+.properties {
+  display: flex;
+  gap: 1rem;
+}
